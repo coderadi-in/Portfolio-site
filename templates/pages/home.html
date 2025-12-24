@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="{{ url_for('static', filename='assets/icons/favicon.ico') }}" type="image/x-icon">
+    <title>coderadi &bull; Aditya</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pages/home.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animations/home.css') }}">
+</head>
+<body>
+    {% include 'components/header.html' %}
+
+    <main class="main column gap-100">        
+        <section class="hero" id="top">
+            <img src="{{ url_for('static', filename='assets/images/02.png') }}" alt="coderadi" class="img">
+            <section class="section column h-center">
+
+                <div class="text-content column gap-20">
+                    <span class="text tag title" style="--d: 0ms;">Ready for new projects</span>
+
+                    <div class="column">
+                        <h1 class="h1" style="--d: 100ms;">Hi,</h1>
+                        <h1 class="h1" style="--d: 200ms;">I'm <span class="highlight">Aditya</span>.</h1>
+                        <p class="para" style="--d: 300ms;">A dedicated software developer &amp; entrepreneur.</p>
+                    </div>
+
+                    <p class="para" style="--d: 400ms;">I build high-converting websites and digital products for entrepreneurs who value clarity, speed, and real-world ROI over flashy trends.</p>
+
+                    <div class="res-row gap-10">
+                        <a href="#work" class="link btn icon-fl" style="--d: 500ms;">
+                            <span class="text">Work with me</span>
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </a>
+                        <a href="/projects/" class="link btn ot" style="--d: 600ms;">View projects</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="philosophy">
+            <section class="section column gap-10 head v-center">
+                <span class="text title">The Philosophy</span>
+                <h1 class="h1">Most websites are over-engineered and under-performing.</h1>
+                <p class="para">I help professionals cut through the noise. My focus is on building simple, robust online assets that convert visitors into clients. I prioritize clarity, speed of execution, and tangible business results. No fluff, just code that works for you.</p>
+            </section>
+        </section>
+
+        <section class="services" id="services">
+            <section class="section column gap-50">
+                <div class="top column">
+                    <h1 class="h1">Built for Growth</h1>
+
+                    <div class="res-row h-sb gap-10">
+                        <p class="para">Specialized services for growth-minded entrepreneurs and creators.</p>
+                        <a href="/offers/" class="link row gap-10 title">See detailed offers <span class="material-symbols-outlined">chevron_right</span></a>
+                    </div>
+                </div>
+
+                <div class="bottom grid gap-20">
+                    <a href="/offers/#landing-page" class="offer link column gap-20" style="--d: 0ms">
+                        <span class="material-symbols-outlined">web</span>
+                        <h2 class="h2">Landing pages</h2>
+                        <p class="para">High-converting simple landing pages designed to sell meaningful products or capture leads with zero distraction.</p>
+                    </a>
+                    
+                    <a href="/offers/#websites" class="offer link column gap-20" style="--d: 100ms;">
+                        <span class="material-symbols-outlined fl-icon">verified</span>
+                        <h2 class="h2">Authority websites</h2>
+                        <p class="para">Full, multi-page websites that position you as the undeniable leads in your industry through strategic design.</p>
+                    </a>
+
+                    <a href="/offers/#products" class="offer link column gap-20" style="--d: 200ms;">
+                        <span class="material-symbols-outlined fl-icon">code</span>
+                        <h2 class="h2">Product building</h2>
+                        <p class="para">Technical execution for SasS products and digital tools. From MVP to scalable architecture.</p>
+                    </a>
+                </div>
+            </section>
+        </section>
+
+        <section class="projects" id="projects">
+            <section class="section column gap-50">
+                <div class="top column">
+                    <h1 class="h1">Active builds</h1>
+
+                    <div class="res-row h-sb gap-10">
+                        <p class="para">A journey that began in the endless scroll culminates here. Not in words, but in working code and launched applications.</p>
+                        <a href="/projects/" class="link row gap-10 title">See all projects <span class="material-symbols-outlined">chevron_right</span></a>
+                    </div>
+                </div>
+
+                <div class="bottom grid gap-20">
+
+                </div>
+            </section>
+            <div class="exp center gap-20">
+                <div class="column v-center">
+                    <h3 class="h3">3+</h3>
+                    <span class="text">YEARS EXP.</span>
+                </div>
+
+                <div class="line"></div>
+                
+                <div class="column v-center">
+                    <h3 class="h3">10+</h3>
+                    <span class="text">PROJECTS</span>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section class="final">
+            <section class="section column gap-20 head v-center">
+                <h1 class="h1">Ready to build something that <span class="highlight">actually works</span> ?</h1>
+                <p class="para">No complex agencies. No complicated tech. Just direct access to a builder who cares about your results.</p>
+                <a href="/contact/?ref=work" class="link btn fl">Start conversation</a>
+            </section>
+        </section>
+    </main>
+
+    <script type="module" src="{{ url_for('static', filename='js/base/base.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='js/pages/home.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/components/header.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/animations/header.css') }}">
+
+<header class="header">
+    <div class="section row h-sb gap-20">
+        <div class="left row gap-20">
+            <div class="menu column gap-10">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+            </div>
+
+            <div class="app-title row gap-10">
+                <img src="{{ url_for('static', filename='assets/icons/logo.png') }}" alt="coderadi" class="logo">
+                <h1 class="h1">coderadi</h1>
+            </div>
+        </div>
+
+        <ul class="list row gap-20">
+            <li><a href="/" class="link">Home</a></li>
+            <li><a href="/projects/" class="link">Projects</a></li>
+            <li><a href="/offers/" class="link">Offers</a></li>
+            <li><a href="/about/" class="link">About</a></li>
+            <li><a href="/contact/" class="link">Contact</a></li>
+        </ul>
+
+        <a href="#work" class="link btn fl">Work with me</a>
+    </div>
+</header>
+
+<nav class="nav column h-sb gap-20">
+    <div class="close-nav"><span class="material-symbols-outlined icon">arrow_left</span></div>
+    <div class="left row gap-20">
+        <div class="menu column gap-10">
+            <span class="material-symbols-outlined">close</span>
+        </div>
+
+        <div class="app-title row gap-10">
+            <img src="{{ url_for('static', filename='assets/icons/logo.png') }}" alt="coderadi" class="logo">
+            <h1 class="h1">coderadi</h1>
+        </div>
+    </div>
+
+    <ul class="list column gap-10">
+        <li><a href="/" class="link row gap-10"><span class="material-symbols-outlined">arrow_menu_open</span> Home</a></li>
+        <li><a href="/projects/" class="link row gap-10"><span class="material-symbols-outlined">arrow_menu_open</span> Projects</a></li>
+        <li><a href="/offers/" class="link row gap-10"><span class="material-symbols-outlined">arrow_menu_open</span> Offers</a></li>
+        <li><a href="/about/" class="link row gap-10"><span class="material-symbols-outlined">arrow_menu_open</span> About</a></li>
+        <li><a href="/contact/" class="link row gap-10"><span class="material-symbols-outlined">arrow_menu_open</span> Contact</a></li>
+    </ul>
+
+    <a href="#work" class="link btn fl">Work with me</a>
+</nav>
+
+<script type="module" src="{{ url_for('static', filename='js/components/header.js') }}"></script>

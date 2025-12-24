@@ -28,12 +28,12 @@ if (__name__ == '__main__'):
 # | ERROR HANDLING [START]
 
 # & 404
-@server.error_handler(404)
+@server.errorhandler(404)
 def page_not_found(error):
     return render_template('errors/404.html'), 404
 
 # & 500
-@server.error_handler(500)
+@server.errorhandler(500)
 def internal_server_error(error):
     return render_template('errors/500.html'), 500
 

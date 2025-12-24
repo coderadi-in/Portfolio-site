@@ -9,8 +9,8 @@ router = Blueprint('router', __name__)
 
 # & LANDING ROUTE
 @router.route('/')
-def index():
-    return render_template('pages/index.html')
+def home():
+    return render_template('pages/home.html')
 
 # & PROJECTS ROUTE
 @router.route('/projects/')
