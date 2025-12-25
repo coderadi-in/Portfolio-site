@@ -4,12 +4,14 @@
 :root {
     --background: #0E0E10;
     --surface: #1A1A1D;
-    --surface-light: #0f52BA50;
+    
+    --board-1: #1A1A1DA0;
+    --board-2: #F4E22520;
 
-    --primary: #0F52BA;
-    --secondary: #2F7CEE;
+    --primary: #F4E225;
+    --secondary: #FFFF9C;
 
-    --text: #E8F1F2;
+    --text: #EEF0F2;
     --text-secondary: #86868B;
     --border: #2C2C31;
 
@@ -31,8 +33,8 @@
 *::-webkit-scrollbar {display: none;}
 
 *::selection {
-    background-color: #808080;
-    color: #FFF;
+    background-color: var(--board-2);
+    color: var(--text);
 }
 
 body {
@@ -103,6 +105,8 @@ body {
     font-family: "Inter", sans-serif;
 }
 
+.sec {color: var(--text-secondary);}
+
 .list {list-style: none;}
 .no-list {list-style-position: inside;}
 
@@ -162,7 +166,9 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+    font-weight: 500;
     background-color: var(--primary);
+    color: var(--background) !important;
 }
 
 .ot {
@@ -172,7 +178,8 @@ body {
 
 .fl {
     background-color: var(--primary);
-    color: var(--text) !important;
+    font-weight: 500;
+    color: var(--background) !important;
 }
 
 .disabled {

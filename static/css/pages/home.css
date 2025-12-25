@@ -21,65 +21,37 @@
 .hero .tag {
     padding: 10px 20px;
     border-radius: 50px;
-    background-color: var(--surface-light);
+    background-color: var(--board-2);
     border: 1px solid var(--primary);
     width: fit-content;
 }
 
-.hero .h1 {font-size: 7rem;}
-/* | HERO SECTION [END] */
-
-/* | PHILOSOPHY SECTION [START] */
-.philosophy {
-    background-color: var(--surface);
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-}
-/* | PHILOSOPHY SECTION [END] */
-
-/* | OFFERS SECTION [START] */
-.services .bottom {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-.services .offer {
-    padding: 20px;
-    background-color: var(--surface);
-    border-radius: 8px;
-}
-
-.services .offer .material-symbols-outlined {
+.hero .h1 {
+    font-size: 7rem;
     width: fit-content;
-    padding: 10px;
-    border-radius: 8px;
-    background-color: var(--background);
-    color: var(--secondary);
-}
-/* | OFFERS SECTION [END] */
-
-/* | PROJECTS SECTION [START] */
-.projects .bottom {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
 }
 
-.projects .exp .line {
-    width: 2px;
-    height: 35px;
-    background-color: var(--border);
+.hero .overview {
+    background-color: var(--board-1);
+    border-left: 2px solid var(--primary);
+    padding: 20px;
+    width: fit-content;
 }
 
-/* | CTA SECTION [START] */
-.final .section {padding: 0 20px;}
-.final .link {
-    padding: 20px 50px;
-    text-transform: uppercase;
-    font-weight: 500;
-    box-shadow: 0 0 10px var(--primary);
+.hero .cta .link {padding: 10px 20px;}
+.hero .cta .icon-fl {background-color: var(--text);}
+
+.hero .cta .icon-ot {
+    border-color: var(--primary);
+    color: var(--primary);
 }
-/* | CTA SECTION [END] */
+
+/* | HERO SECTION [END] */
 
 /* & RESPONSIVE VERSIONS */
 @media (max-width: 768px) {
