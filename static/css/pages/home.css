@@ -50,8 +50,27 @@
     border-color: var(--primary);
     color: var(--primary);
 }
-
 /* | HERO SECTION [END] */
+
+/* | PERFORMANCE SECTION [START] */
+.performance .fl-icon {color: var(--primary);}
+
+.performance .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.performance .stats-grid .stat,
+.performance .bio {
+    padding: 20px;
+    background-color: var(--surface);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    text-align: center;
+}
+.performance .bio {text-align: start;}
+.performance .stat .fl-icon {font-size: var(--f4);}
+/* | PERFORMANCE SECTION [END] */
 
 /* & RESPONSIVE VERSIONS */
 @media (max-width: 768px) {

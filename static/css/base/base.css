@@ -74,7 +74,6 @@ body {
 .title {
     text-transform: uppercase;
     font-weight: 500;
-    color: var(--primary) !important;
 }
 
 .h1 {
