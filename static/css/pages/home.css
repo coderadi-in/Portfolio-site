@@ -69,6 +69,9 @@
     text-align: center;
 }
 .performance .bio {text-align: start;}
+
+.performance .stats-grid .stat.link {border-color: var(--primary);}
+
 .performance .stat .fl-icon {font-size: var(--f4);}
 /* | PERFORMANCE SECTION [END] */
 
@@ -130,7 +133,9 @@
     border-radius: 10px;
 }
 
+.achievements .achievement .details,
 .achievements .achievement .text-content {width: 100%;}
+
 .achievements .achievement .stack .text {
     background-color: var(--surface);
     padding: 5px 8px;
@@ -140,7 +145,7 @@
 .achievements .achievement .other {
     padding-left: 20px;
     border-left: 2px solid var(--secondary);
-    width: 10%;
+    width: 210px;
 }
 /* | ACHIEVEMENTS SECTION [END] */
 
@@ -150,6 +155,7 @@
     border: 1px solid var(--border);
     border-radius: 15px;
     width: fit-content;
+    margin: 20px;
 }
 
 .join .fl-icon.highlight {
@@ -171,6 +177,13 @@
 }
 
 /* & RESPONSIVE VERSIONS */
+@media (max-width: 1024px) {
+    .achievements .achievement {
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
 @media (max-width: 768px) {
     .hero {
         background-image: none;
@@ -178,6 +191,14 @@
     }
 
     .hero .img {display: block;}
+}
+
+@media (max-width: 568px) {
+    .achievements .achievement .img {max-width: 100%;}
+    .achievements .achievement .details {
+        flex-direction: column;
+        align-items: start;
+    }
 }
 
 @media (max-width: 425px) {

@@ -54,7 +54,7 @@
 .nav.active * {transform: translateX(0);}
 
 /* & RESPONSIVE VERSIONS */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .header .menu {display: flex;}
     .header .list {display: none;}
 }
