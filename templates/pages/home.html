@@ -78,8 +78,8 @@
                 <div class="bottom column gap-20">
                     <div class="stats-grid gap-20">
                         <a href="#inventory" class="stat column gap-10 link">
-                            <h1 class="h1">05/10</h1>
-                            <span class="text title">Slots filled</span>
+                            <h1 class="h1">05</h1>
+                            <span class="text title">Slots unlocked</span>
                         </a>
 
                         <div class="stat column gap-10">
@@ -98,11 +98,77 @@
                         </div>
                     </div>
 
-                    <div class="bio">
-                        <p class="para"><span class="text title highlight">Bio:</span> I've specialized in
-                            high-performance web applications. Equipped with a versatile set stack and a strategic
-                            approach to problem-solving. My main mission involves translating complex requirements into
-                            seamless, user-centric interfaces.</p>
+                    <div class="dev-desc-bar flex gap-20">
+                        <div class="bio column gap-10 h-sb dev-desc">
+                            <div class="top column gap-10">
+                                <div class="row gap-10">
+                                    <span class="material-symbols-outlined fl-icon">account_circle</span>
+                                    <span class="text title highlight">Bio</span>
+                                </div>
+
+                                <p class="para">I've specialized in high-performance web applications. Equipped with a
+                                    versatile
+                                    set stack and a strategic approach to problem-solving. My main mission involves
+                                    complex
+                                    requirements into seamless, user-centric interfaces.</p>
+                            </div>
+
+                            <div class="tags res-row gap-10">
+                                <span class="tag text title">Loc: Remote</span>
+                                <span class="tag text title">Server: NE-UP 272207</span>
+                            </div>
+                        </div>
+
+                        <div class="levels column gap-20 dev-desc">
+                            <div class="row gap-10">
+                                <span class="material-symbols-outlined fl-icon">monitoring</span>
+                                <span class="text title highlight">Performance</span>
+                            </div>
+
+                            <div class="level column gap-5">
+                                <div class="row h-sb">
+                                    <span class="text">INT (Problem solving)</span>
+                                    <span class="text highlight">80/100</span>
+                                </div>
+
+                                <div class="progress-bar">
+                                    <div class="progress-done" style="width: 80%; --cl: #4C8EFF;"></div>
+                                </div>
+                            </div>
+
+                            <div class="level column gap-5">
+                                <div class="row h-sb">
+                                    <span class="text">SPD (Delivery speed)</span>
+                                    <span class="text highlight">75/100</span>
+                                </div>
+
+                                <div class="progress-bar">
+                                    <div class="progress-done" style="width: 75%; --cl: var(--secondary);"></div>
+                                </div>
+                            </div>
+
+                            <div class="level column gap-5">
+                                <div class="row h-sb">
+                                    <span class="text">CRE (Creativity)</span>
+                                    <span class="text highlight">90/100</span>
+                                </div>
+
+                                <div class="progress-bar">
+                                    <div class="progress-done" style="width: 95%; --cl: #059669;"></div>
+                                </div>
+                            </div>
+
+                            <div class="level column gap-5">
+                                <div class="row h-sb">
+                                    <span class="text">COM (Communication)</span>
+                                    <span class="text highlight">60/100</span>
+                                </div>
+
+                                <div class="progress-bar">
+                                    <div class="progress-done" style="width: 60%; --cl: #FF4D4D;"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -116,127 +182,80 @@
                             <span class="material-symbols-outlined fl-icon highlight">shelves</span>
                             <h1 class="h1">Inventory (skills)</h1>
                         </div>
-                        <p class="mini"><span class="text title highlight mini">SLOTS: </span> 05/10</p>
+                        <p class="mini"><span class="text title highlight mini">TOTAL SLOTS: </span> 05</p>
                     </div>
                     <hr class="divider">
                 </div>
 
                 <div class="bottom grid gap-20">
-                    <div class="skill column gap-10 v-center">
-                        <div class="row badge gap-5">
-                            <span class="text title">LVL. 34</span>
-                            <span class="text title">Professional</span>
-                        </div>
-
-                        <img src="{{ url_for('static', filename='assets/icons/python.png') }}" alt="Python"
-                            class="logo">
-                        <span class="text">Python</span>
-                    </div>
-
-                    <div class="skill column gap-10 v-center">
-                        <div class="row badge gap-5">
-                            <span class="text title">LVL. 16</span>
-                            <span class="text title">Intermediate</span>
-                        </div>
-
-                        <img src="{{ url_for('static', filename='assets/icons/frontend.png') }}" alt="HTML/CSS"
-                            class="logo">
-                        <span class="text">HTML/CSS</span>
-                    </div>
-
-                    <div class="skill column gap-10 v-center">
-                        <div class="row badge gap-5">
-                            <span class="text title">LVL. 13</span>
-                            <span class="text title">Beginner</span>
-                        </div>
-
+                    <div class="skill column gap-10">
+                        <span class="material-symbols-outlined fl-icon">lock_open_right</span>
                         <img src="{{ url_for('static', filename='assets/icons/javascript.png') }}" alt="JavaScript"
                             class="logo">
-                        <span class="text">JavaScript</span>
+                        <h3 class="h3">JavaScript</h3>
+                        <p class="para"><span class="title highlight">Intermediate:</span> 60%</p>
+
+                        <div class="progress-bar">
+                            <div class="progress-done" style="width: 60%;"></div>
+                        </div>
                     </div>
 
-                    <div class="skill column gap-10 v-center">
-                        <div class="row badge gap-5">
-                            <span class="text title">LVL. 16</span>
-                            <span class="text title">Professional</span>
-                        </div>
-
-                        <img src="{{ url_for('static', filename='assets/icons/python.png') }}" alt="Flask" class="logo">
-                        <span class="text">Flask</span>
-                    </div>
-
-                    <div class="skill column gap-10 v-center">
-                        <div class="row badge gap-5">
-                            <span class="text title">LVL. 10</span>
-                            <span class="text title">Beginner</span>
-                        </div>
-
-                        <img src="{{ url_for('static', filename='assets/icons/python.png') }}" alt="Flask" class="logo">
-                        <span class="text">MySQL</span>
-                    </div>
-
-                    <div class="skill column gap-10 v-center locked">
-                        <span class="material-symbols-outlined fl-icon lock">lock</span>
-
-                        <div class="row badge gap-5">
-                            <span class="text title">LVL. 08</span>
-                            <span class="text title">Beginner</span>
-                        </div>
-
-                        <img src="{{ url_for('static', filename='assets/icons/nodejs.png') }}" alt="NodeJS"
+                    <div class="skill column gap-10">
+                        <span class="material-symbols-outlined fl-icon">lock_open_right</span>
+                        <img src="{{ url_for('static', filename='assets/icons/python.png') }}" alt="Python"
                             class="logo">
-                        <span class="text">NodeJS</span>
+                        <h3 class="h3">Python</h3>
+                        <p class="para"><span class="title highlight">Mastery:</span> 90%</p>
+
+                        <div class="progress-bar">
+                            <div class="progress-done" style="width: 90%;"></div>
+                        </div>
                     </div>
 
-                    <div class="skill column gap-10 v-center locked">
-                        <span class="material-symbols-outlined fl-icon lock">lock</span>
-
-                        <div class="row badge gap-5">
-                            <span class="text title">LVL. 08</span>
-                            <span class="text title">Beginner</span>
-                        </div>
-
-                        <img src="{{ url_for('static', filename='assets/icons/expressjs.png') }}" alt="ExpressJS"
+                    <div class="skill column gap-10">
+                        <span class="material-symbols-outlined fl-icon">lock_open_right</span>
+                        <img src="{{ url_for('static', filename='assets/icons/frontend.png') }}" alt="HTML/CSS"
                             class="logo">
-                        <span class="text">ExpressJS</span>
+                        <h3 class="h3">HTML/CSS</h3>
+                        <p class="para"><span class="title highlight">Pro:</span> 75%</p>
+
+                        <div class="progress-bar">
+                            <div class="progress-done" style="width: 75%;"></div>
+                        </div>
                     </div>
 
-                    <div class="skill column gap-10 v-center locked">
-                        <span class="material-symbols-outlined fl-icon lock">lock</span>
+                    <div class="skill column gap-10">
+                        <span class="material-symbols-outlined fl-icon">lock_open_right</span>
+                        <img src="{{ url_for('static', filename='assets/icons/flask.png') }}" alt="Flask" class="logo">
+                        <h3 class="h3">Flask</h3>
+                        <p class="para"><span class="title highlight">Mastery:</span> 80%</p>
 
-                        <div class="row badge gap-5">
-                            <span class="text title">LVL. 16</span>
-                            <span class="text title">Beginner</span>
+                        <div class="progress-bar">
+                            <div class="progress-done" style="width: 80%;"></div>
                         </div>
-
-                        <img src="{{ url_for('static', filename='assets/icons/flet.png') }}" alt="Flet" class="logo">
-                        <span class="text">Flet</span>
                     </div>
 
-                    <div class="skill column gap-10 v-center locked">
-                        <span class="material-symbols-outlined fl-icon lock">lock</span>
+                    <div class="skill column gap-10">
+                        <span class="material-symbols-outlined fl-icon">lock_open_right</span>
+                        <img src="{{ url_for('static', filename='assets/icons/mysql.png') }}" alt="MySQL" class="logo">
+                        <h3 class="h3">MySQL</h3>
+                        <p class="para"><span class="title highlight">Intermediate:</span> 60%</p>
 
-                        <div class="row badge gap-5">
-                            <span class="text title">LVL. 08</span>
-                            <span class="text title">Beginner</span>
+                        <div class="progress-bar">
+                            <div class="progress-done" style="width: 60%;"></div>
                         </div>
+                    </div>
 
+                    <div class="skill column gap-10 locked">
+                        <span class="material-symbols-outlined fl-icon">lock</span>
                         <img src="{{ url_for('static', filename='assets/icons/data_science.png') }}" alt="Data Science"
                             class="logo">
-                        <span class="text">Data Science</span>
-                    </div>
+                        <h3 class="h3">Data Science</h3>
+                        <p class="para"><span class="title highlight">Acquiring:</span> 10%</p>
 
-                    <div class="skill column gap-10 v-center locked">
-                        <span class="material-symbols-outlined fl-icon lock">lock</span>
-
-                        <div class="row badge gap-5">
-                            <span class="text title">LVL. 07</span>
-                            <span class="text title">Beginner</span>
+                        <div class="progress-bar">
+                            <div class="progress-done" style="width: 10%;"></div>
                         </div>
-
-                        <img src="{{ url_for('static', filename='assets/icons/android.png') }}" alt="Android"
-                            class="logo">
-                        <span class="text">Android dev.</span>
                     </div>
                 </div>
             </section>

@@ -60,54 +60,85 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.performance .stats-grid .stat,
-.performance .bio {
+.performance .stats-grid .stat {
     padding: 20px;
     background-color: var(--surface);
     border-radius: 8px;
     border: 1px solid var(--border);
     text-align: center;
 }
-.performance .bio {text-align: start;}
 
 .performance .stats-grid .stat.link {border-color: var(--primary);}
-
 .performance .stat .fl-icon {font-size: var(--f4);}
+
+.performance .dev-desc {
+    background-color: var(--surface);
+    border: 2px solid var(--border);
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+}
+
+.performance .bio .tags {margin-left: auto;}
+.performance .bio .tag {
+    background-color: var(--board-2);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.performance .level .progress-bar {
+    height: 10px;
+    background-color: var(--background);
+    border-radius: 50px;
+}
+
+.performance .level .progress-done {
+    height: 10px;
+    background-color: var(--cl);
+    border-radius: 50px;
+}
 /* | PERFORMANCE SECTION [END] */
 
 /* | INVENTORY SECTION [START] */
 .inventory .bottom {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(max(200px, 20%), 1fr));
 }
 
 .inventory .skill {
     background-color: var(--board-2);
+    border: 2px solid var(--primary);
     padding: 20px;
     border-radius: 10px;
-    border: 2px solid var(--primary);
-    justify-content: end;
+    position: relative;
 }
 
 .inventory .skill.locked {
     background-color: var(--board-1);
-    border: 2px solid var(--border);
-    position: relative;
+    border-color: var(--border);
 }
 
-.inventory .skill.locked .lock {
+.inventory .skill .fl-icon {
+    color: var(--primary);
     position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(2px);
-    font-size: 40px;
+    right: 20px;
 }
+
+.inventory .skill.locked .fl-icon {color: var(--border);}
+
+.inventory .skill .progress-bar {
+    height: 10px;
+    background-color: var(--surface);
+    border-radius: 50px;
+}
+
+.inventory .skill .progress-done {
+    height: 10px;
+    background-color: var(--primary);
+    border-radius: 50px;
+}
+
+.inventory .skill.locked .progress-done {background-color: var(--border);}
 
 .inventory .skill .badge {margin-left: auto;}
 .inventory .skill .badge .text {
@@ -191,6 +222,9 @@
     }
 
     .hero .img {display: block;}
+
+    .performance .dev-desc-bar {flex-direction: column;}
+    .performance .dev-desc {width: 100%;}
 }
 
 @media (max-width: 568px) {
