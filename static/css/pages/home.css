@@ -72,6 +72,104 @@
 .performance .stat .fl-icon {font-size: var(--f4);}
 /* | PERFORMANCE SECTION [END] */
 
+/* | INVENTORY SECTION [START] */
+.inventory .bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.inventory .skill {
+    background-color: var(--board-2);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid var(--primary);
+    justify-content: end;
+}
+
+.inventory .skill.locked {
+    background-color: var(--board-1);
+    border: 2px solid var(--border);
+    position: relative;
+}
+
+.inventory .skill.locked .lock {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    font-size: 40px;
+}
+
+.inventory .skill .badge {margin-left: auto;}
+.inventory .skill .badge .text {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+}
+/* | INVENTORY SECTION [END] */
+
+/* | ACHIEVEMENTS SECTION [START] */
+.achievements .achievement {
+    background-color: var(--board-2);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--primary);
+}
+
+.achievements .achievement .img {
+    max-width: 250px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.achievements .achievement .text-content {width: 100%;}
+.achievements .achievement .stack .text {
+    background-color: var(--surface);
+    padding: 5px 8px;
+    border-radius: 8px;
+}
+
+.achievements .achievement .other {
+    padding-left: 20px;
+    border-left: 2px solid var(--secondary);
+    width: 10%;
+}
+/* | ACHIEVEMENTS SECTION [END] */
+
+/* | JOIN SECTION [START] */
+.join .section {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.join .fl-icon.highlight {
+    background-color: var(--board-2);
+    padding: 15px;
+    border-radius: 50px;
+    border: 2px solid var(--primary);
+}
+
+.join .form-elem {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.join .form-elem input {
+    padding: 5px;
+    border: none;
+}
+
 /* & RESPONSIVE VERSIONS */
 @media (max-width: 768px) {
     .hero {

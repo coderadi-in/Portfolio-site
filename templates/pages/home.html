@@ -58,7 +58,7 @@
                     </a>
 
                     <a href="#join" class="link btn icon-ot">
-                        <span class="material-symbols-outlined">chat</span>
+                        <span class="material-symbols-outlined fl-icon">chat</span>
                         <span class="text">Message</span>
                     </a>
                 </div>
@@ -70,7 +70,7 @@
                 <div class="top column">
                     <div class="row gap-10">
                         <span class="material-symbols-outlined fl-icon">bar_chart</span>
-                        <h1 class="h1">Performance</h1>
+                        <h1 class="h1">Performance Stats</h1>
                     </div>
                     <hr class="divider">
                 </div>
@@ -78,20 +78,20 @@
                 <div class="bottom column gap-20">
                     <div class="stats-grid gap-20">
                         <a href="#inventory" class="stat column gap-10 link">
-                            <h1 class="h1">5/10</h1>
-                            <span class="text title">Slots</span>
+                            <h1 class="h1">05/10</h1>
+                            <span class="text title">Slots filled</span>
                         </a>
-                        
+
                         <div class="stat column gap-10">
                             <h1 class="h1">3+</h1>
                             <span class="text title">Years exp.</span>
                         </div>
-                        
+
                         <div class="stat column gap-10">
                             <h1 class="h1">10+</h1>
                             <span class="text title">Projects</span>
                         </div>
-                        
+
                         <div class="stat column gap-10">
                             <h1 class="material-symbols-outlined fl-icon">full_stacked_bar_chart</h1>
                             <span class="text title">Full-stack dev.</span>
@@ -99,9 +99,294 @@
                     </div>
 
                     <div class="bio">
-                        <p class="para"><span class="text title highlight">Bio:</span> I've specialized in high-performance web applications. Equipped with a versatile set stack and a strategic approach to problem-solving. My main mission involves translating complex requirements into seamless, user-centric interfaces.</p>
+                        <p class="para"><span class="text title highlight">Bio:</span> I've specialized in
+                            high-performance web applications. Equipped with a versatile set stack and a strategic
+                            approach to problem-solving. My main mission involves translating complex requirements into
+                            seamless, user-centric interfaces.</p>
                     </div>
                 </div>
+            </section>
+        </section>
+
+        <section class="inventory" id="inventory">
+            <section class="section column gap-20">
+                <div class="top column">
+                    <div class="res-row h-sb gap-10">
+                        <div class="row gap-10">
+                            <span class="material-symbols-outlined fl-icon highlight">shelves</span>
+                            <h1 class="h1">Inventory (skills)</h1>
+                        </div>
+                        <p class="mini"><span class="text title highlight mini">SLOTS: </span> 05/10</p>
+                    </div>
+                    <hr class="divider">
+                </div>
+
+                <div class="bottom grid gap-20">
+                    <div class="skill column gap-10 v-center">
+                        <div class="row badge gap-5">
+                            <span class="text title">LVL. 34</span>
+                            <span class="text title">Professional</span>
+                        </div>
+
+                        <img src="{{ url_for('static', filename='assets/icons/python.png') }}" alt="Python"
+                            class="logo">
+                        <span class="text">Python</span>
+                    </div>
+
+                    <div class="skill column gap-10 v-center">
+                        <div class="row badge gap-5">
+                            <span class="text title">LVL. 16</span>
+                            <span class="text title">Intermediate</span>
+                        </div>
+
+                        <img src="{{ url_for('static', filename='assets/icons/frontend.png') }}" alt="HTML/CSS"
+                            class="logo">
+                        <span class="text">HTML/CSS</span>
+                    </div>
+
+                    <div class="skill column gap-10 v-center">
+                        <div class="row badge gap-5">
+                            <span class="text title">LVL. 13</span>
+                            <span class="text title">Beginner</span>
+                        </div>
+
+                        <img src="{{ url_for('static', filename='assets/icons/javascript.png') }}" alt="JavaScript"
+                            class="logo">
+                        <span class="text">JavaScript</span>
+                    </div>
+
+                    <div class="skill column gap-10 v-center">
+                        <div class="row badge gap-5">
+                            <span class="text title">LVL. 16</span>
+                            <span class="text title">Professional</span>
+                        </div>
+
+                        <img src="{{ url_for('static', filename='assets/icons/python.png') }}" alt="Flask" class="logo">
+                        <span class="text">Flask</span>
+                    </div>
+
+                    <div class="skill column gap-10 v-center">
+                        <div class="row badge gap-5">
+                            <span class="text title">LVL. 10</span>
+                            <span class="text title">Beginner</span>
+                        </div>
+
+                        <img src="{{ url_for('static', filename='assets/icons/python.png') }}" alt="Flask" class="logo">
+                        <span class="text">MySQL</span>
+                    </div>
+
+                    <div class="skill column gap-10 v-center locked">
+                        <span class="material-symbols-outlined fl-icon lock">lock</span>
+
+                        <div class="row badge gap-5">
+                            <span class="text title">LVL. 08</span>
+                            <span class="text title">Beginner</span>
+                        </div>
+
+                        <img src="{{ url_for('static', filename='assets/icons/nodejs.png') }}" alt="NodeJS"
+                            class="logo">
+                        <span class="text">NodeJS</span>
+                    </div>
+
+                    <div class="skill column gap-10 v-center locked">
+                        <span class="material-symbols-outlined fl-icon lock">lock</span>
+
+                        <div class="row badge gap-5">
+                            <span class="text title">LVL. 08</span>
+                            <span class="text title">Beginner</span>
+                        </div>
+
+                        <img src="{{ url_for('static', filename='assets/icons/expressjs.png') }}" alt="ExpressJS"
+                            class="logo">
+                        <span class="text">ExpressJS</span>
+                    </div>
+
+                    <div class="skill column gap-10 v-center locked">
+                        <span class="material-symbols-outlined fl-icon lock">lock</span>
+
+                        <div class="row badge gap-5">
+                            <span class="text title">LVL. 16</span>
+                            <span class="text title">Beginner</span>
+                        </div>
+
+                        <img src="{{ url_for('static', filename='assets/icons/flet.png') }}" alt="Flet" class="logo">
+                        <span class="text">Flet</span>
+                    </div>
+
+                    <div class="skill column gap-10 v-center locked">
+                        <span class="material-symbols-outlined fl-icon lock">lock</span>
+
+                        <div class="row badge gap-5">
+                            <span class="text title">LVL. 08</span>
+                            <span class="text title">Beginner</span>
+                        </div>
+
+                        <img src="{{ url_for('static', filename='assets/icons/data_science.png') }}" alt="Data Science"
+                            class="logo">
+                        <span class="text">Data Science</span>
+                    </div>
+
+                    <div class="skill column gap-10 v-center locked">
+                        <span class="material-symbols-outlined fl-icon lock">lock</span>
+
+                        <div class="row badge gap-5">
+                            <span class="text title">LVL. 07</span>
+                            <span class="text title">Beginner</span>
+                        </div>
+
+                        <img src="{{ url_for('static', filename='assets/icons/android.png') }}" alt="Android"
+                            class="logo">
+                        <span class="text">Android dev.</span>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="resources" id="resources">
+            <section class="section column gap-20">
+                <div class="top column">
+                    <div class="row gap-10">
+                        <span class="material-symbols-outlined fl-icon highlight">backpack</span>
+                        <h1 class="h1">Resource packs (offers)</h1>
+                    </div>
+                    <hr class="divider">
+                </div>
+
+                <div class="bottom grid gap-20">
+
+                </div>
+            </section>
+        </section>
+
+        <section class="achievements" id="achievements">
+            <section class="section column gap-20">
+                <div class="top column">
+                    <div class="res-row h-sb gap-10">
+                        <div class="row gap-10">
+                            <span class="material-symbols-outlined fl-icon highlight">trophy</span>
+                            <h1 class="h1">Achievements</h1>
+                        </div>
+
+                        <a href="/achievements/" class="link row">
+                            <span class="text title highlight">Checkout all achievements</span>
+                            <span class="material-symbols-outlined highlight">chevron_right</span>
+                        </a>
+                    </div>
+
+                    <hr class="divider">
+                    </h1>
+                </div>
+
+                <div class="bottom column gap-20">
+                    <div class="achievement row gap-20">
+                        <img src="{{ url_for('static', filename='assets/previews/landing-page-01.png') }}"
+                            alt="Fitness landing page" class="img">
+
+                        <div class="text-content column gap-10">
+                            <div class="column">
+                                <div class="row h-sb">
+                                    <h2 class="h2">Fitness Landing Page</h2>
+                                    <span class="material-symbols-outlined fl-icon sec">trophy</span>
+                                </div>
+
+                                <p class="para">This is a simple modern landing page for fitness coaches getting online.
+                                </p>
+                            </div>
+
+                            <div class="row gap-10 stack">
+                                <span class="text title">HTML</span>
+                                <span class="text title">CSS</span>
+                                <span class="text title">JavaScript</span>
+                                <span class="text title">Flask</span>
+                            </div>
+                        </div>
+
+                        <div class="other column gap-20">
+                            <div class="xp column">
+                                <h1 class="h1">+3</h1>
+                                <span class="text title">Days spent</span>
+                            </div>
+
+                            <div class="row gap-10">
+                                <a href="/achievements/landing-page-01" class="link">
+                                    <span class="material-symbols-outlined">open_in_new</span>
+                                </a>
+                                <span class="material-symbols-outlined">done_all</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="achievement row gap-20">
+                        <img src="{{ url_for('static', filename='assets/previews/landing-page-02.png') }}"
+                            alt="Startup landing page" class="img">
+
+                        <div class="text-content column gap-10">
+                            <div class="column">
+                                <div class="row h-sb">
+                                    <h2 class="h2">Startup Landing Page</h2>
+                                    <span class="material-symbols-outlined fl-icon sec">trophy</span>
+                                </div>
+
+                                <p class="para">This is a simple modern landing page for startups showing their ideas.
+                                </p>
+                            </div>
+
+                            <div class="row gap-10 stack">
+                                <span class="text title">HTML</span>
+                                <span class="text title">CSS</span>
+                                <span class="text title">JavaScript</span>
+                                <span class="text title">Flask</span>
+                            </div>
+                        </div>
+
+                        <div class="other column gap-20">
+                            <div class="xp column">
+                                <h1 class="h1">+2</h1>
+                                <span class="text title">Days spent</span>
+                            </div>
+
+                            <div class="row gap-10">
+                                <a href="/achievements/landing-page-02" class="link">
+                                    <span class="material-symbols-outlined">open_in_new</span>
+                                </a>
+                                <span class="material-symbols-outlined">done_all</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="join" id="join">
+            <section class="section column gap-20">
+                <div class="head column v-center gap-10">
+                    <span class="material-symbols-outlined fl-icon highlight">login</span>
+                    <h1 class="h1">Join the party</h1>
+                    <p class="para">Enter credentials to initiate the connection protocol.</p>
+                </div>
+
+                <form action="/contact/" method="post" class="form column gap-20">
+                    <div class="form-elem row gap-10">
+                        <label for="name" class="material-symbols-outlined fl-icon">person</label>
+                        <input type="text" name="name" id="name" placeholder="John Doe" class="input">
+                    </div>
+
+                    <div class="form-elem row gap-10">
+                        <label for="email" class="material-symbols-outlined fl-icon">alternate_email</label>
+                        <input type="email" name="email" id="email" placeholder="johndoe@example.com" class="input">
+                    </div>
+
+                    <div class="column gap-10">
+                        <label for="message" class="title highlight">Data payload (message)</label>
+                        <textarea name="message" id="message" placeholder="Type your message here..."
+                            class="input"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn icon-fl h-center">
+                        <span class="material-symbols-outlined fl-icon">mode_off_on</span>
+                        <span class="text title">Connect to server</span>
+                    </button>
+                </form>
             </section>
         </section>
     </main>
