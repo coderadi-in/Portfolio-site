@@ -1,5 +1,8 @@
 /* | HERO SECTION [START] */
-.hero .h1 {font-size: 7rem;}
+.hero .h1 {
+    font-size: 7rem;
+    line-height: 7rem;
+}
 
 .hero .desc {
     padding: 5px 5px 5px 20px;
@@ -9,7 +12,7 @@
 
 .hero .bottom {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .hero .bottom .data {
@@ -28,11 +31,15 @@
 /* | HERO SECTION [END] */
 
 /* | ACHIEVEMENTS SECTION [START] */
+.achievements .achievement {
+    border-radius: 20px;
+    border: 2px solid var(--border);
+}
+
 .achievements .achievement .left {
     padding: 20px;
     border-radius: 10px 0 0 10px;
     background-color: var(--board-1);
-    border: 2px solid var(--border);
     width: 30%;
 }
 
@@ -54,8 +61,6 @@
 .achievements .achievement .right {
     padding: 20px;
     border-radius: 0 20px 20px 0;
-    border: 2px solid var(--border);
-    border-left: none;
     background-color: var(--surface);
     width: 70%;
     position: relative;
@@ -73,6 +78,7 @@
     text-align: end;
     color: var(--background);
     z-index: -1;
+    border-radius: 20px;
 }
 
 .achievements .achievement .right .tag {
@@ -113,3 +119,43 @@
 .achievements .achievement .development {color: #3993DD;}
 .achievements .achievement .archived {color: #484D6D;}
 .achievements .achievement .suspended {color: #C1292E;}
+
+/* & RESPONSIVE VERSIONS */
+@media (max-width: 768px) {
+    .achievements .achievement {
+        flex-direction: column;
+    }
+
+    .achievements .achievement .left {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    
+    }
+    .achievements .achievement .right {
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+    }
+}
+
+@media (max-width: 568px) {
+    .achievements .achievement .right .top {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .achievements .achievement .accent {
+        text-align: center !important;
+        left: 0;
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 425px) {
+    .hero .h1 {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+
+    .achievements .achievement .accent {display: none;}
+    .achievements .achievement .badge {width: 100%;}
+}
