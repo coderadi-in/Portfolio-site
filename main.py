@@ -21,9 +21,8 @@ bind_plugins(server)
 bind_routers(server)
 
 # ! INITIALIZING DATABASE
-if (__name__ == '__main__'):
-    with server.app_context():
-        db.create_all()
+with server.app_context():
+    db.create_all()
 
 # | ERROR HANDLING [START]
 

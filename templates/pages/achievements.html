@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="I've specialized in high-performance web applications. Equipped with a versatile set stack and a strategic approach to problem-solving. My main mission involves complex requirements into seamless, user-centric interfaces.">
+    <meta name="keywords"
+        content="coderadi, coderadi.in, coder, adi, Aditya, Aditya singh, developer, software developer, web developer, lucknow">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#F4E225">
+    <meta name="color-scheme" content="dark">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='assets/icons/favicon.ico') }}" type="image/x-icon">
+    <title>Achievements &bull; coderadi</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pages/achievements.css') }}">
+</head>
+
+<body>
+    {% include 'components/header.html' %}
+
+    <main class="main column gap-100">
+        <section class="hero" id="top">
+            <section class="section column gap-20">
+                <div class="top column gap-10">
+                    <p class="para title highlight row gap-10">
+                        <span class="material-symbols-outlined fl-icon">folder_open</span>
+                        <span class="">DIRECTORY: ./root/achievements/</span>
+                    </p>
+
+                    <h1 class="h1">Project <span class="highlight">Database</span></h1>
+
+                    <p class="para desc">A comprehensive database of all missions, side-quests, and technical feats.
+                        Review detailed mission reports below.</p>
+                </div>
+
+                <div class="bottom grid gap-20">
+                    <div class="data row gap-20">
+                        <span class="material-symbols-outlined fl-icon"
+                            style="--f: #4C8EFF; --b: #77AAFF57;">deployed_code</span>
+                        <div class="column">
+                            <h2 class="h2">{{ data.count }}</h2>
+                            <span class="text title">Total projects</span>
+                        </div>
+                    </div>
+
+                    <div class="data row gap-20">
+                        <span class="material-symbols-outlined fl-icon"
+                            style="--f: #059669; --b: #84A98C57;">timer</span>
+                        <div class="column">
+                            <h2 class="h2">48h</h2>
+                            <span class="text title">Fasted build</span>
+                        </div>
+                    </div>
+
+                    <div class="data row gap-20">
+                        <span class="material-symbols-outlined fl-icon"
+                            style="--f: #DB162F; --b: #F6A2AD57;">coffee</span>
+                        <div class="column">
+                            <h2 class="h2"><span class="material-symbols-outlined">all_inclusive</span></h2>
+                            <span class="text title">Caffeine level</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="achievements">
+            <section class="section column gap-20">
+                {% for achievement in data.achievements %}
+                <div class="achievement flex">
+                    <div class="left column gap-20">
+                        <img src="{{ url_for('static', filename=achievement.cover) }}" alt="Cover" class="img">
+
+                        <div class="column gap-10">
+                            <p class="para title row gap-10">
+                                <span class="material-symbols-outlined fl-icon">backpack</span>
+                                <span>Equipped tech</span>
+                            </p>
+
+                            <div class="res-row gap-10">
+                                {% for tech in achievement.tech_stack %}
+                                <span class="text title tag">{{ tech }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right column gap-20">
+                        <span class="material-symbols-outlined fl-icon accent">{{ achievement.accent }}</span>
+                        <div class="top flex h-sb">
+                            <div class="basic column gap-10">
+                                <div class="res-row gap-10">
+                                    <span class="text title highlight tag">{{ achievement.role }}</span>
+                                    <span class="text sec">{{ achievement.category }}</span>
+                                </div>
+
+                                <h1 class="h1">{{ achievement.title }}</h1>
+
+                                <p class="para desc">{{ achievement.desc }}</p>
+                            </div>
+
+                            <div class="flex gap-20">
+                                <span class="material-symbols-outlined fl-icon icon">trophy</span>
+
+                                <a href="{{ achievement.url }}" class="link">
+                                    <span class="material-symbols-outlined fl-icon icon">open_in_new</span>
+                                </a>
+
+                                {% if achievement.github %}
+                                <a href="{{ achievement.github }}" class="link" target="_blank">
+                                    <span class="material-symbols-outlined fl-icon icon">code</span>
+                                </a>
+                                {% endif %}
+                            </div>
+                        </div>
+
+                        <div class="badges res-row gap-20">
+                            {% for badge in achievement.achievements %}
+                            <div class="badge row gap-10">
+                                <span class="material-symbols-outlined fl-icon">{{ badge.icon }}</span>
+
+                                <div class="column">
+                                    <span class="text title">{{ badge.title }}</span>
+                                    <h3 class="h3">{{ badge.desc }}</h3>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+
+                        <p class="para title highlight row gap-10 {{ achievement.status }}">
+                            <span class="material-symbols-outlined fl-icon">fiber_manual_record</span>
+                            <span>status: {{ achievement.status }}</span>
+                        </p>
+                    </div>
+                </div>
+                {% endfor %}
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>

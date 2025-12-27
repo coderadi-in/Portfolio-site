@@ -13,13 +13,13 @@ def home():
     return render_template('pages/home.html')
 
 # & PROJECTS ROUTE
-@router.route('/projects/')
+@router.route('/achievements/')
 def projects():
     projects = Project.query.all()
     count = Project.query.count()
 
-    return render_template('pages/projects.html', data={
-        'projects': projects,
+    return render_template('pages/achievements.html', data={
+        'achievements': projects,
         'count': count
     })
 
