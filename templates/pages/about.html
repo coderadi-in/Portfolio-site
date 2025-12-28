@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="I've specialized in high-performance web applications. Equipped with a versatile set stack and a strategic approach to problem-solving. My main mission involves complex requirements into seamless, user-centric interfaces.">
+    <meta name="keywords"
+        content="coderadi, coderadi.in, coder, adi, Aditya, Aditya singh, developer, software developer, web developer, lucknow">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#F4E225">
+    <meta name="color-scheme" content="dark">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='assets/icons/favicon.ico') }}" type="image/x-icon">
+    <title>coderadi &bull; Aditya</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pages/about.css') }}">
+</head>
+
+<body>
+    {% include 'components/header.html' %}
+
+    <main class="main column gap-50">
+        <section class="hero" id="top">
+            <section class="section">
+                <section class="content flex gap-40">
+                    <div class="image-content">
+                        <img src="{{ url_for('static', filename='assets/images/02.png') }}" alt="My Pic" class="img">
+                        <span class="text title tag">Aditya</span>
+                    </div>
+
+                    <div class="text-content column gap-10">
+                        <div class="top flex h-sb gap-20">
+                            <div class="details column">
+                                <h1 class="h1">Aditya [coderadi]</h1>
+                                <span class="text title highlight">Class: Full Stack Developer</span>
+                            </div>
+
+                            <div class="others res-row gap-10">
+                                <p class="para title highlight row gap-10">
+                                    <span class="material-symbols-outlined fl-icon">fiber_manual_record</span>
+                                    <span>Online</span>
+                                </p>
+
+                                <span class="text title">Open to quests</span>
+                            </div>
+                        </div>
+
+                        <hr class="divider">
+
+                        <div class="bottom grid gap-20">
+                            <div class="tag column gap-10">
+                                <span class="text title">Special ability</span>
+                                <h3 class="h3">Backend dev.</h3>
+                            </div>
+
+                            <div class="tag column gap-10">
+                                <span class="text title">Current quest</span>
+                                <h3 class="h3">Building Software</h3>
+                            </div>
+
+                            <div class="tag column gap-10">
+                                <span class="text title">Project count</span>
+                                <h3 class="h3">{{ data.count }}</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+
+        <section class="about" id="about">
+            <section class="section flex gap-40">
+                <div class="left column gap-40">
+                    <div class="story column gap-10">
+                        <h2 class="h2 sec">My Story Begins with a Scroll and a Spark.</h2>
+
+                        <div class="body column gap-10">
+                            <p class="para sec">Every story needs a catalyst. <span class="normal">Mine arrived not in a
+                                    classroom</span> or a library, but in the endless scroll of short-form videos.</p>
+
+                            <p class="para sec">At fifteen, I was adrift in a digital sea, another Gen-Z statistic
+                                consuming content mindlessly.</p>
+
+                            <p class="para sec">Then, <span class="normal">a single reel flickered across my
+                                    screen</span>: "I'm taking the challenge to learn coding in one day." I scrolled
+                                past, as one does.</p>
+
+                            <p class="para sec"><span class="normal">But the seed was planted.</span> Hours later, a
+                                thought cut through the noise: "What if I tried for a week?"</p>
+
+                            <p class="para sec">That single week of curiosity rerouted my destiny.</p>
+
+                            <p class="para sec">The hours once lost to the digital ether were suddenly alight with code,
+                                transforming a passive consumer into an active creator.</p>
+
+                            <p class="para sec"><span class="normal">A hobby was born from a challenge.</span></p>
+                        </div>
+                    </div>
+
+                    <div class="failures column gap-10">
+                        <div class="heading flex gap-10">
+                            <span class="material-symbols-outlined fl-icon">warning</span>
+                            <h2 class="h2">Battle scars (project failures)</h2>
+                        </div>
+
+                        <div class="failure column gap-10">
+                            <div class="row gap-10">
+                                <span class="material-symbols-outlined icon">trending_down</span>
+
+                                <div class="column">
+                                    <h3 class="h3">Out of budget</h3>
+                                    <span class="text title sec">Result: Total shut down</span>
+                                </div>
+                            </div>
+
+                            <p class="para">I was once building a web-app for traders to save their trading history and
+                                share their team trades at one place. This was my first software project.</p>
+                            <a target="_blank" href="https://github.com/coderadi-in/Project-Investora"
+                                class="ulink highlight">View in GitHub</a>
+                        </div>
+
+                        <div class="failure column gap-10">
+                            <div class="row gap-10">
+                                <span class="material-symbols-outlined icon">center_focus_weak</span>
+
+                                <div class="column">
+                                    <h3 class="h3">Weak management</h3>
+                                    <span class="text title sec">Result: Lot of conflicts</span>
+                                </div>
+                            </div>
+
+                            <p class="para">I was once building a web-app for working professionals, project managers
+                                and team leaders to manage and visualize their project with insights. This was my second
+                                software project.</p>
+                            <a target="_blank" href="https://github.com/coderadi-in/VisualizerIO"
+                                class="ulink highlight">View in GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right column gap-40">
+                    <div class="skills column gap-10">
+                        <div class="row gap-10">
+                            <span class="material-symbols-outlined fl-icon highlight">bar_chart</span>
+                            <h2 class="h2">Skill proficiency</h2>
+                        </div>
+
+                        <div class="chart column gap-10">
+                            <div class="column gap-5">
+                                <span class="text">Frontend</span>
+                                <div class="progress-bar">
+                                    <div class="progress-done" style="width: 70%; --c: #4C8EFF;"></div>
+                                </div>
+                            </div>
+
+                            <div class="column gap-5">
+                                <span class="text">Backend</span>
+                                <div class="progress-bar">
+                                    <div class="progress-done" style="width: 85%; --c: #059669;"></div>
+                                </div>
+                            </div>
+
+                            <div class="column gap-5">
+                                <span class="text">UI/UX</span>
+                                <div class="progress-bar">
+                                    <div class="progress-done" style="width: 70%; --c: #FF7F11;"></div>
+                                </div>
+                            </div>
+
+                            <div class="column gap-5">
+                                <span class="text">Database</span>
+                                <div class="progress-bar">
+                                    <div class="progress-done" style="width: 60%; --c: #DB162F;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inventory column gap-10">
+                        <div class="row gap-10">
+                            <span class="material-symbols-outlined fl-icon highlight">backpack</span>
+                            <h2 class="h2">Inventory (tech-stack)</h2>
+                        </div>
+
+                        <div class="stack grid gap-20">
+                            <div class="block column v-center gap-10">
+                                <span class="material-symbols-outlined fl-icon">draw</span>
+                                <span class="text">Figma</span>
+                            </div>
+                            
+                            <div class="block column v-center gap-10">
+                                <span class="material-symbols-outlined fl-icon">html</span>
+                                <span class="text">HTML5</span>
+                            </div>
+                            
+                            <div class="block column v-center gap-10">
+                                <span class="material-symbols-outlined fl-icon">css</span>
+                                <span class="text">CSS3</span>
+                            </div>
+                            
+                            <div class="block column v-center gap-10">
+                                <span class="material-symbols-outlined fl-icon">javascript</span>
+                                <span class="text">JS</span>
+                            </div>
+                            
+                            <div class="block column v-center gap-10">
+                                <span class="material-symbols-outlined fl-icon">dns</span>
+                                <span class="text">Flask</span>
+                            </div>
+                            
+                            <div class="block column v-center gap-10">
+                                <span class="material-symbols-outlined fl-icon">storage</span>
+                                <span class="text">PostgreSQL</span>
+                            </div>
+                            
+                            <div class="block column v-center gap-10">
+                                <span class="material-symbols-outlined fl-icon">terminal</span>
+                                <span class="text">VS Code</span>
+                            </div>
+                            
+                            <div class="block column v-center gap-10">
+                                <span class="material-symbols-outlined fl-icon">cloud</span>
+                                <span class="text">Render</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>

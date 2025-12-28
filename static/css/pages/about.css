@@ -1,0 +1,149 @@
+/* | HERO SECTION */
+.hero .content {
+    padding: 20px;
+    background-color: var(--board-1);
+    border-radius: 15px;
+    box-shadow: 0 0 2px var(--secondary);
+}
+
+.hero .image-content {
+    position: relative;
+    height: fit-content;
+}
+
+.hero .image-content .img {
+    max-width: 375px;
+    border-radius: 10px;
+    border: 2px solid var(--secondary);
+}
+
+.hero .image-content .tag {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--board-2);
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 1px solid var(--border);
+    backdrop-filter: blur(10px);
+}
+
+.hero .text-content {width: 100%;}
+
+.hero .text-content .others .title {
+    background-color: var(--board-2);
+    padding: 5px 8px;
+    border-radius: 6px;
+    border: 1px solid var(--primary);
+}
+
+.hero .text-content .others .title:last-child {
+    border: none;
+    background-color: var(--board-1);   
+}
+
+.hero .text-content .bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.hero .text-content .bottom .tag {
+    background-color: var(--surface);
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid var(--border);
+}
+/* | HERO SECTION [END] */
+
+/* | ABOUT SECTION [START] */
+.about .left,
+.about .right {width: 50%;}
+
+/* | STORY SECTION [START] */
+.story {
+    padding: 5px 5px 5px 20px;
+    border-left: 2px solid var(--primary);
+}
+
+.story .normal {color: var(--text);}
+/* | STORY SECTION [END] */
+
+/* | FAILURES SECTION [START] */
+.failures .heading .fl-icon {color: #DB162F;}
+
+.failures .failure {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+}
+
+.failures .failure .icon {
+    padding: 10px;
+    background-color: #F6A2AD57;
+    color: #DB162F;
+    border-radius: 8px;
+}
+/* | FAILURES SECTION [END] */
+
+/* | SKILLS SECTION [START] */
+.skills .chart {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: var(--board-1);
+}
+
+.skills .progress-bar {
+    height: 10px;
+    background-color: var(--surface);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.skills .progress-done {
+    width: 70%;
+    background-color: var(--c);
+    height: 10px;
+    border-radius: 20px;
+}
+/* | SKILLS SECTION [END] */
+
+/* | INVENTORY SECTION [START] */
+.inventory .stack {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    padding: 15px;
+    background-color: var(--board-1);
+    border-radius: 8px;
+}
+
+.inventory .stack .block {
+    background-color: var(--surface);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid var(--border);
+}
+.inventory .stack .block:hover {background-color: var(--board-2);}
+.inventory .stack .block:hover .fl-icon {color: var(--secondary);}
+/* | INVENTORY SECTION [END] */
+
+/* & RESPONSIVE VERSIONS */
+@media (max-width: 932px) {
+    .hero .top {flex-direction: column-reverse;}
+}
+
+@media (max-width: 896px) {
+    .about .section {flex-direction: column;}
+
+    .about .left,
+    .about .right {width: 100%;}
+}
+
+@media (max-width: 768px) {
+    .hero .content {flex-direction: column;}
+    .hero .image-content {width: fit-content;}
+}
+
+@media (max-width: 568px) {
+    .hero .image-content .img {max-width: 100%;}
+}

@@ -31,7 +31,10 @@ def project(project_url):
 # & ABOUT ROUTE
 @router.route('/about/')
 def about():
-    return render_template('pages/about.html')
+    count = Project.query.count()
+    return render_template('pages/about.html', data={
+        'count': count
+    })
 
 # & OFFERS ROUTE
 @router.route('/offers/')

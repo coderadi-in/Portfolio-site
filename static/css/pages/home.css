@@ -106,12 +106,13 @@
 }
 
 .inventory .skill {
-    background-color: var(--board-2);
+    background-color: var(--board-1);
     border: 2px solid var(--primary);
     padding: 20px;
     border-radius: 10px;
     position: relative;
 }
+.inventory .skill:hover {background-color: var(--board-2);}
 
 .inventory .skill.locked {
     background-color: var(--board-1);
