@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="I've specialized in high-performance web applications. Equipped with a versatile set stack and a strategic approach to problem-solving. My main mission involves complex requirements into seamless, user-centric interfaces.">
+    <meta name="keywords"
+        content="coderadi, coderadi.in, coder, adi, Aditya, Aditya singh, developer, software developer, web developer, lucknow">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#F4E225">
+    <meta name="color-scheme" content="dark">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='assets/icons/favicon.ico') }}" type="image/x-icon">
+    <title>connect with coderadi</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pages/contact.css') }}">
+</head>
+
+<body>
+    {% include 'components/header.html' %}
+
+    <main class="main column gap-50">
+        <section class="hero" id="top">
+            <section class="section column gap-10">
+                <p class="para title highlight row gap-10">
+                    <span class="material-symbols-outlined fl-icon">person_pin</span>
+                    <span>Connect with coderadi</span>
+                </p>
+
+                <h1 class="h1">Let's get <span class="highlight">connected</span></h1>
+                <p class="para">Fill out the form below, and we'll reach out to see if you're a perfect fit.</p>
+            </section>
+        </section>
+
+        <section class="contact" id="join">
+            <section class="section flex gap-40">
+                <form action="/contact/" method="post" class="form column gap-20">
+                    <h2 class="h2">contact form</h2>
+
+                    <div class="form-elem row gap-10">
+                        <label for="name" class="material-symbols-outlined fl-icon">person</label>
+                        <input required type="text" name="name" id="name" placeholder="Enter your name" class="input">
+                    </div>
+
+                    <div class="form-elem row gap-10">
+                        <label for="email" class="material-symbols-outlined fl-icon">alternate_email</label>
+                        <input required type="email" name="email" id="email" placeholder="Enter your email"
+                            class="input">
+                    </div>
+
+                    <div class="form-elem row gap-10">
+                        <label for="subject" class="material-symbols-outlined fl-icon">subject</label>
+                        <input type="text" name="subject" id="subject" placeholder="Brief subject line" class="input">
+                    </div>
+
+                    <div class="form-elem column gap-10">
+                        <label for="message">Message</label>
+                        <textarea required name="message" id="message" placeholder="Type a message for us...
+Or explain your project..." class="input"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn icon-fl">
+                        <span class="material-symbols-outlined fl-icon">send</span>
+                        <span class="text title">request contact</span>
+                    </button>
+
+                    <div class="row gap-10">
+                        <hr class="divider">
+                        <span class="text">OR</span>
+                        <hr class="divider">
+                    </div>
+
+                    <a href="https://wa.me/919044791312?text=Hi%2C+I+wanna+work+with+you" class="link btn icon-fl">
+                        <span class="material-symbols-outlined fl-icon">send</span>
+                        <span class="text title">connect at whatsapp</span>
+                    </a>
+                </form>
+
+                <div class="content column gap-20">
+                    <div class="location column">
+                        <div class="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8486.941926896601!2d83.082516095349!3d27.274657641761817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3996c35802ae419d%3A0xeaecd9524ebc86b8!2sTetri%20Bazar%2C%20Uttar%20Pradesh%20272207!5e1!3m2!1sen!2sin!4v1766932292542!5m2!1sen!2sin"
+                                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+
+                        <div class="cords column gap-10">
+                            <div class="loc physical row gap-10">
+                                <span class="material-symbols-outlined fl-icon">location_on</span>
+
+                                <div class="column">
+                                    <h3 class="h3">Uttar Pradesh, India</h3>
+                                    <span class="text">272207</span>
+                                </div>
+                            </div>
+
+                            <div class="loc digital row gap-10">
+                                <span class="material-symbols-outlined fl-icon">mail</span>
+
+                                <div class="column">
+                                    <span class="text title">Email</span>
+                                    <a href="mailto:adi@coderadi.in" class="link">adi@coderadi.in</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social column gap-10">
+                        <span class="text title sec">social links</span>
+
+                        <a target="_blank" href="https://www.youtube.com/@coderadi-in" class="link row gap-10">
+                            <img src="{{ url_for('static', filename='assets/icons/yt.png') }}" alt="YouTube" class="icon">
+
+                            <div class="column gap-5">
+                                <span class="text">DevLogs</span>
+                                <span class="text">@coderadi-in</span>
+                            </div>
+                        </a>
+                        
+                        <a target="_blank" href="https://github.com/coderadi-in" class="link row gap-10">
+                            <img src="{{ url_for('static', filename='assets/icons/git.png') }}" alt="GitHub" class="icon">
+
+                            <div class="column gap-5">
+                                <span class="text">Source codes</span>
+                                <span class="text">coderadi-in</span>
+                            </div>
+                        </a>
+                        
+                        <a target="_blank" href="https://www.instagram.com/coderadi.in" class="link row gap-10">
+                            <img src="{{ url_for('static', filename='assets/icons/insta.png') }}" alt="Instagram" class="icon">
+
+                            <div class="column gap-5">
+                                <span class="text">Behind the scenes</span>
+                                <span class="text">@coderadi.in</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>
