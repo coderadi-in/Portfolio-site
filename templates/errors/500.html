@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#F4E225">
+    <meta name="color-scheme" content="dark">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='assets/icons/favicon.ico') }}" type="image/x-icon">
+    <title>coderadi &bull; Aditya</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base/err.css') }}">
+</head>
+<body>
+    <main class="main">
+        <section class="section column v-center gap-20">
+            <h1 class="h1 large">500</h1>
+            <h1 class="h1">System crashed</h1>
+
+            <p class="para">Something went wrong at our end. Return back to home or try reloading.</p>
+            <div class="line"></div>
+
+            <div class="res-row v-center h-center gap-10">
+                <a href="/" class="link btn icon-fl">
+                    <span class="material-symbols-outlined fl-icon">home</span>
+                    <span class="text title">Return to Home</span>
+                </a>
+
+                <button class="btn icon-ot" onclick="window.location.reload()">
+                    <span class="material-symbols-outlined">replay</span>
+                    <span class="text title">Reload</span>
+                </button>
+            </div>
+
+            <a href="/contact/?ref=error" class="ulink">Report error</a>
+        </section>
+    </main>
+
+    <span class="glowlight"></span>
+</body>
+</html>

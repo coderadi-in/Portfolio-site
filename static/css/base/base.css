@@ -157,13 +157,16 @@ body {
 .icon-ot {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     border: 1px solid var(--border);
+    background: transparent;
 }
 
 .icon-fl {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     font-weight: 500;
     background-color: var(--primary);
