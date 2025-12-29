@@ -54,6 +54,8 @@ def contact():
         return render_template('pages/contact.html')
     
     else:
+        route = request.headers.get('Referer', '/contact/')
+
         name = request.form.get('name')
         email = request.form.get('email')
         subject = request.form.get('subject')
@@ -68,5 +70,15 @@ def contact():
 
         db.session.add(new_contact)
         db.session.commit()
-        flash("Your message has been sent successfully!", "success")
-        return redirect(url_for('router.contact'))
+        flash("Your message has been sent successfully!", "check_circle")
+        
+        notify(f"""Someone has filled the contact form at your `portfolio site`.
+Name: {name}
+Email: {email}
+Subject: {subject}
+Message:
+{message}
+
+    - coderadi.in""")
+        
+        return redirect(route)
