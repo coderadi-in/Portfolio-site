@@ -51,7 +51,12 @@ def offers():
 @router.route('/contact/', methods=['GET', 'POST'])
 def contact():
     if (request.method == 'GET'): 
-        return render_template('pages/contact.html')
+        referral = request.args.get('ref', "")
+        referral_statement = REFERRALS.get(referral, "")
+        
+        return render_template('pages/contact.html', data={
+            'ref': referral_statement
+        })
     
     else:
         route = request.headers.get('Referer', '/contact/')
