@@ -94,7 +94,7 @@
 
 .performance .level .progress-done {
     height: 10px;
-    background-color: var(--cl);
+    background-color: var(--text-secondary);
     border-radius: 50px;
 }
 /* | PERFORMANCE SECTION [END] */
