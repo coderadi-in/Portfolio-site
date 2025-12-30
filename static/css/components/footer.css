@@ -1,0 +1,8 @@
+.footer {
+    background-color: var(--surface);
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px -9px var(--secondary);
+}
+
+.footer .section {padding: 20px;}

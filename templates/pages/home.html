@@ -267,22 +267,6 @@
             </section>
         </section>
 
-        <section class="resources" id="resources">
-            <section class="section column gap-20">
-                <div class="top column">
-                    <div class="row gap-10">
-                        <span class="material-symbols-outlined fl-icon highlight">backpack</span>
-                        <h1 class="h1">Resource packs (offers)</h1>
-                    </div>
-                    <hr class="divider">
-                </div>
-
-                <div class="bottom grid gap-20">
-
-                </div>
-            </section>
-        </section>
-
         <section class="achievements" id="achievements">
             <section class="section column gap-20">
                 <div class="top column">
@@ -420,6 +404,8 @@
                 </form>
             </section>
         </section>
+
+        {% include 'components/footer.html' %}
     </main>
 
     <script type="module" src="{{ url_for('static', filename='js/base/base.js') }}"></script>
